@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="./style/style.css" rel="stylesheet"></link>
+</head>
+<body class="bg-dark ">
+    <div id="wrapper" class="container-md bg-light">
+
+<!-- BARRA DE NAVEGACIÓN COMPONENTE BOOTSTRAP-->        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success position-sticky top-0 opacity-100">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">2 SECCION</a>
+                      </li>
+<!-- NO VOY A USAR EL "DROPDOWN", NI EL BOTON "DISABLE" EN ESTE CASO LO COMENTO 
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                     
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+-->                      
+                  </div>
+                </div>
+        </nav>
+        
+<!-- SECCION HERO CON CARRUSEL DE BOOTSTRAP-->
+        <section ID="HERO">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+        </section>
+<!-- vAMOS A TRABAJAR CON EL GRID DE BOOTSTRAP. ES IMPORTANTE SABER QUE BOOTSTRAP DIVIDE LA PANTALLA EN 12 COLUMNAS, PUES CUANDO ASIGNEMOS VALORES A GRID LA SUMA TOTAL DEBE DE SER 12. 
+TAMBIEN SE ESTA OBLIGADO A TENER UNA DIV  Y QUE ESTE TENGA UNA CLASE "CONTAINER O CONTAINER-FLUID", DESPUÉS DE ESTO (TODAVIA ES OBLIGATORIO) HACER OTRA ETIQUETA DIV HA DE TENER CLASS=ROW, DE ESTA UNA COMO COMO MÍNIMO-->
+
+<!-- Estan los atributos sm, md, lg, xl, xxl entonces ,cuando pongamos la columna col-sm-6 estamos diciendo que en pantallas de tamaño desde xs ponlo en 6 columnas, y si queremos más de una condición las ponemos seguidas, por ejemplo "col-xs-6 col-md-4 col-2" Esto querria decir que en pantallas desde tamaño xs el elemento coger 6 columnas, que en pantallas de tamaño md el elemento coge 4 columnas y por último en pantallas de pc el elemento ocupa dos columnas-->
+        <section ID="GALLERY" class="p-4">
+            <h2 class="text-center text-danger">Aquí pongo una seccion a cuatro columnas</h2>
+            <div class="container">
+                <div class="row g-5">
+                  <div class="col-xs-12 col-md-6 col-lg-3 ">
+<!-- Para espaciar el el contenido de las columas, se usa gx seguido de guion y un número. El gutter es un espaciado entre contenido de columnas-->
+<!-- Para colocar las columnas alineadas en vertical, arriba en row, hay que utilizarlas clase aling-items que regulan todas las columnas a la vez, van dentro de row, y para indicar el comportamiento por separado se usa la clase aling-self que va dentro de col-->
+<!-- Cuidado con usar margin en las columnas, ya que desplaza la distribución del grid-->
+ 
+<!-- Aqui empieza la primera card-->
+                    <div class="card" >
+                      <img src="https://i.picsum.photos/id/197/400/400.jpg?hmac=EMGJfztOncchyhxYLBig-GifHwLYkvPrZJvM_oDgYfQ" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a data-bs-toggle="modal" data-bs-target="#leermas1" class="btn btn-primary">Leer más</a>
+                        <!-- Modal #leermas1 -->
+                        <div class="modal fade" id="leermas1" tabindex="-1" aria-labelledby="leermas1" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="leermas1">Leer más</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <p>Consequatur animi a expedita incidunt dolorum vitae </p>
+                              <p> possimus aspernatur! Delectus quos asperiores sed iure! </p>
+                            <p>Itaque modi maiores, accusantium natus molestias doloremque minima!</p>
+                              </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                               </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+<!-- Aqui empieza la segunda card-->                  
+                  <div class="col-xs-12 col-md-6 col-lg-3   ">
+                    <div class="card">
+                      <img src="https://i.picsum.photos/id/742/400/400.jpg?hmac=SywhWP3vklMx265xxSW9zgbq5kVtoKTHt96yPFXoP1o" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Titulo del Card 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a data-bs-toggle="modal" data-bs-target="#leermas2" class="btn btn-primary">Leer más2 </a>
+
+                        <!-- Modal #leermas1 -->
+                        <div class="modal fade" id="leermas2" tabindex="-1" aria-labelledby="leermas2" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="leermas2">Leer más</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <p>Consequatur animi a expedita incidunt dolorum vitae </p>
+                              <p> possimus aspernatur! Delectus quos asperiores sed iure! </p>
+                            <p>Itaque modi maiores, accusantium natus molestias doloremque minima!</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                              </div>
+                            </div>
+                          </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+ <!-- aquí empieza la tercera card-->                   
+                  <div class="col-xs-12 col-md-6 col-lg-3  ">
+                    <div class="card" >
+                      <img src="https://i.picsum.photos/id/907/400/400.jpg?hmac=rW0KD_ETo42hpFolaALqoj4PtxlYfDYIXirAcsuoymQ" class="card-img-top rounded-circle border-0" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+  <!-- aquí empieza la Cuarta card-->                
+                  <div class="col-xs-12 col-md-6 col-lg-3   ">
+                    <div class="card" >
+                      <img src="https://i.picsum.photos/id/541/400/400.jpg?hmac=t7-QqvFJEPeBgOU1Ej6KxR5r4TEPpBuJG8ueyZPI_LE" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+              
+
+
+        </section>
+        <section id="hero2" class="vh-95 bg-warning ">
+            hero 2 con imagen de fondo
+        </section>
+        <section>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L6.2,181.3C12.3,171,25,149,37,160C49.2,171,62,213,74,224C86.2,235,98,213,111,186.7C123.1,160,135,128,148,138.7C160,149,172,203,185,224C196.9,245,209,235,222,245.3C233.8,256,246,288,258,293.3C270.8,299,283,277,295,229.3C307.7,181,320,107,332,85.3C344.6,64,357,96,369,128C381.5,160,394,192,406,186.7C418.5,181,431,139,443,112C455.4,85,468,75,480,96C492.3,117,505,171,517,170.7C529.2,171,542,117,554,101.3C566.2,85,578,107,591,122.7C603.1,139,615,149,628,165.3C640,181,652,203,665,197.3C676.9,192,689,160,702,149.3C713.8,139,726,149,738,154.7C750.8,160,763,160,775,165.3C787.7,171,800,181,812,192C824.6,203,837,213,849,218.7C861.5,224,874,224,886,213.3C898.5,203,911,181,923,176C935.4,171,948,181,960,197.3C972.3,213,985,235,997,240C1009.2,245,1022,235,1034,229.3C1046.2,224,1058,224,1071,229.3C1083.1,235,1095,245,1108,234.7C1120,224,1132,192,1145,181.3C1156.9,171,1169,181,1182,160C1193.8,139,1206,85,1218,69.3C1230.8,53,1243,75,1255,101.3C1267.7,128,1280,160,1292,192C1304.6,224,1317,256,1329,261.3C1341.5,267,1354,245,1366,202.7C1378.5,160,1391,96,1403,64C1415.4,32,1428,32,1434,32L1440,32L1440,320L1433.8,320C1427.7,320,1415,320,1403,320C1390.8,320,1378,320,1366,320C1353.8,320,1342,320,1329,320C1316.9,320,1305,320,1292,320C1280,320,1268,320,1255,320C1243.1,320,1231,320,1218,320C1206.2,320,1194,320,1182,320C1169.2,320,1157,320,1145,320C1132.3,320,1120,320,1108,320C1095.4,320,1083,320,1071,320C1058.5,320,1046,320,1034,320C1021.5,320,1009,320,997,320C984.6,320,972,320,960,320C947.7,320,935,320,923,320C910.8,320,898,320,886,320C873.8,320,862,320,849,320C836.9,320,825,320,812,320C800,320,788,320,775,320C763.1,320,751,320,738,320C726.2,320,714,320,702,320C689.2,320,677,320,665,320C652.3,320,640,320,628,320C615.4,320,603,320,591,320C578.5,320,566,320,554,320C541.5,320,529,320,517,320C504.6,320,492,320,480,320C467.7,320,455,320,443,320C430.8,320,418,320,406,320C393.8,320,382,320,369,320C356.9,320,345,320,332,320C320,320,308,320,295,320C283.1,320,271,320,258,320C246.2,320,234,320,222,320C209.2,320,197,320,185,320C172.3,320,160,320,148,320C135.4,320,123,320,111,320C98.5,320,86,320,74,320C61.5,320,49,320,37,320C24.6,320,12,320,6,320L0,320Z"></path></svg>
+        </section>
+
+        <footer>
+
+        </footer>
+    </div>
+
+    <script src=".js/misscripts.js"></script>
+
+
+    
+</body>
+</html>

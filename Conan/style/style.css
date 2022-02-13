@@ -1,0 +1,18 @@
+/****** estilo propio  ******/
+.navbar{z-index: 1500;}
+
+.vh-95 {height: 95vh;}
+
+/*Si quieres poner una imagen fija en una hero section, hay que definirla de esta manera*/
+#hero2 {background-image: url();
+        background-size: cover;
+        background-position: center;}
+
+/* Manera de crear y usar una nueva  fuente que no cubra el bootstrap*/
+
+@font-face {
+    font-family: minombre ;
+    src: url("./fonts/...");
+    }
+
+.mifuente {font-family: minombre;}    
